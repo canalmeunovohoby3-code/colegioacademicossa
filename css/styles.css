@@ -507,6 +507,7 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.12; font-weight: 700; letter-
 @media (max-width: 560px) {
   .container, .header-inner, .hero-content { width: min(100% - 32px); }
   .brand img { width: 120px; }
+  .hero-bg { object-position: left center; }
   .video-feature { aspect-ratio: 4 / 3; }
   .stats { grid-template-columns: 1fr; gap: 20px; }
   .stat { border-left: none; border-bottom: 3px solid var(--line); padding: 20px 0; }

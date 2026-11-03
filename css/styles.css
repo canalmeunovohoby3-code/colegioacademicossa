@@ -194,7 +194,7 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.12; font-weight: 700; letter-
 .hero-media { position: absolute; inset: 0; z-index: 0; }
 .hero-bg {
   position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; object-position: center;
+  object-fit: cover; object-position: center top;
 }
 .hero-overlay {
   position: absolute; inset: 0;
@@ -344,6 +344,21 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.12; font-weight: 700; letter-
 .vida-item { border-radius: var(--radius-md); overflow: hidden; }
 .vida-item img { width: 100%; height: 260px; object-fit: cover; transition: transform .5s var(--ease); }
 .vida-item:hover img { transform: scale(1.06); }
+
+/* ==========================================================================
+   Por que as famílias escolhem
+   ========================================================================== */
+.porque { background: var(--paper-blue); }
+.porque-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 28px; }
+.porque-card { display: flex; flex-direction: column; }
+.porque-media {
+  position: relative; border-radius: var(--radius-lg); overflow: hidden;
+  aspect-ratio: 4 / 3; background: var(--white); box-shadow: var(--shadow-sm);
+}
+.porque-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
+.porque-card:hover .porque-media img { transform: scale(1.06); }
+.porque-title { font-size: 19px; margin-top: 18px; letter-spacing: -.01em; }
+.porque-text { margin-top: 8px; font-size: 14.5px; color: var(--slate); line-height: 1.6; }
 
 /* ==========================================================================
    História / timeline
@@ -499,6 +514,7 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.12; font-weight: 700; letter-
   .etapas { grid-template-columns: 1fr; }
   .experiencias-grid { grid-template-columns: 1fr; }
   .vida-gallery { grid-template-columns: 1fr 1fr; }
+  .porque-grid { grid-template-columns: 1fr 1fr; gap: 28px 22px; }
   .portais-grid { grid-template-columns: 1fr; }
   .contato-grid { grid-template-columns: 1fr; }
   .contato-map { min-height: 320px; }
@@ -509,7 +525,8 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.12; font-weight: 700; letter-
 @media (max-width: 560px) {
   .container, .header-inner, .hero-content { width: min(100% - 32px); }
   .brand img { width: 120px; }
-  .hero-bg { object-position: left center; }
+  .hero-bg { object-position: left top; }
+  .porque-grid { grid-template-columns: 1fr; }
   .video-feature { aspect-ratio: 4 / 3; }
   .stats { grid-template-columns: 1fr; gap: 20px; }
   .stat { border-left: none; border-bottom: 3px solid var(--line); padding: 20px 0; }

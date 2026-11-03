@@ -198,7 +198,9 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.12; font-weight: 700; letter-
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(7,26,43,.68) 0%, rgba(7,26,43,.38) 45%, rgba(7,26,43,.78) 100%);
+  background:
+    linear-gradient(90deg, rgba(7,26,43,.72) 0%, rgba(7,26,43,.38) 52%, rgba(7,26,43,.18) 100%),
+    linear-gradient(180deg, rgba(7,26,43,.55) 0%, rgba(7,26,43,.32) 45%, rgba(7,26,43,.78) 100%);
 }
 
 .hero-content {

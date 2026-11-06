@@ -301,7 +301,7 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.12; font-weight: 700; letter-
   border: 1px solid var(--line); transition: transform .4s var(--ease), box-shadow .4s;
 }
 .etapa:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); }
-.etapa-media { position: relative; background: var(--paper-blue); overflow: hidden; aspect-ratio: 4 / 3; }
+.etapa-media { position: relative; background: var(--paper-blue); overflow: hidden; aspect-ratio: 1 / 1; }
 .etapa-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .5s var(--ease); }
 .etapa:hover .etapa-media img { transform: scale(1.05); }
 .etapa-tag {
